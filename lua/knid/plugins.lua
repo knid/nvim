@@ -44,7 +44,10 @@ packer.startup(function(use)
 
     -- Other stuff
     use "windwp/nvim-autopairs"
-    use 'windwp/nvim-ts-autotag'
+    use {
+        'windwp/nvim-ts-autotag'
+        requires = {'nvim-treesitter/nvim-treesitter''}
+    }
     use {
         'prettier/vim-prettier',
         run = 'yarn install --frozen-lockfile --production'
