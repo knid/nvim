@@ -4,4 +4,4 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 # Knid nvim
 git clone https://github.com/knid/nvim ~/.config/nvim
 # Install plugins
-nvim +PackerInstall
+nvim +PackerInstall +quit && nvim
