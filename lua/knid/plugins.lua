@@ -45,7 +45,7 @@ packer.startup(function(use)
     -- Other stuff
     use "windwp/nvim-autopairs"
     use {
-        'windwp/nvim-ts-autotag'
+        'windwp/nvim-ts-autotag',
         requires = {'nvim-treesitter/nvim-treesitter'}
     }
     use {
