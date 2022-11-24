@@ -9,10 +9,7 @@ vim.cmd [[packadd packer.nvim]]
 packer.startup(function(use)
     use 'wbthomason/packer.nvim'
      -- Highlight
-    use {
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
-    }
+    use 'nvim-treesitter/nvim-treesitter'
     -- File explorer
     use {
       'nvim-tree/nvim-tree.lua',
