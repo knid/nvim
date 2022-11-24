@@ -1,5 +1,6 @@
 local keymap = vim.keymap
-local telescope = require('telescope.builtin')
+local status, telescope = pcall(require, 'telescope.builtin')
+if (not status) then return end
 -- NvimTree
 keymap.set('n', '<leader>ff', ':NvimTreeFocus<CR>')
 keymap.set('n', '<leader>fc', ':NvimTreeClose<CR>')
