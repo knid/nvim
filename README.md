@@ -11,6 +11,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 
 If you want to use transparent you have to make iterm2 transparent
 
+<!--
 ## Try in docker
 
 ```bash
@@ -19,7 +20,7 @@ If you want to use transparent you have to make iterm2 transparent
     git clone https://github.com/knid/nvim ~/.config/nvim && sh ~/.config/nvim/install.sh
     '
 ```
-
+-->
 ## Setup
 
 ```bash
