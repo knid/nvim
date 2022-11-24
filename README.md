@@ -29,3 +29,15 @@ git clone https://github.com/knid/nvim ~/.config/nvim && sh ~/.config/nvim/insta
 ## Config
 
 if you want to disable transparent change **transparent variable** in **nvim/lua/knid/theme.lua**
+
+### Install language for treesitter
+
+````
+:TSInstall <language>
+````
+
+### Install language for LSP
+
+````
+:MasonInstall <lspserver>
+````
