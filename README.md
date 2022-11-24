@@ -9,6 +9,8 @@
 
 Requires [Neovim](https://neovim.io/) (>= 0.8)
 
+If you want to use transparent you have to make iterm2 transparent
+
 ## Try in docker
 
 ```bash
@@ -23,3 +25,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 ```bash
 git clone https://github.com/knid/nvim ~/.config/nvim && sh ~/.config/nvim/install.sh
 ```
+
+## Config
+
+if you want to disable transparent change **transparent variable** in **nvim/lua/knid/theme.lua**
