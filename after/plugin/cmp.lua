@@ -1,10 +1,13 @@
-local cmp = require'cmp'
+local status, cmp = pcall(require, 'cmp')
+if (not status) then return end
+local status, luasnip = pcall(require, 'luasnip')
+if (not status) then return end
 
 cmp.setup({
   snippet = {
     -- REQUIRED - you must specify a snippet engine
     expand = function(args)
-      require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+        luasnip.lsp_expand(args.body) -- For `luasnip` users.
     end,
   },
   window = {

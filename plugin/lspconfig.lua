@@ -39,8 +39,10 @@ local lsp_flags = {
   -- This is the default in Nvim 0.7+
   debounce_text_changes = 150,
 }
+local status, cmplsp = pcall(require, 'cmp_nvim_lsp')
+if (not status) then return end
 
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local capabilities = cmplsp.default_capabilities()
 
 lspconfig['pyright'].setup{
     on_attach = on_attach,

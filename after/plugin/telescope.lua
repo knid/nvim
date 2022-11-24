@@ -1,5 +1,14 @@
 local status, telescope = pcall(require, "telescope")
 if (not status) then return end
+local status, tss = pcall(require, 'telescope.sorters')
+if (not status) then return end
+local status, tsp = pcall(require, 'telescope.previewers')
+if (not status) then return end
+local status, tsa = pcall(require, 'telescope.actions')
+if (not status) then return end
+
+
+
 
 telescope.setup({
   defaults = {
@@ -33,22 +42,22 @@ telescope.setup({
       height = 0.80,
       preview_cutoff = 120,
     },
-    file_sorter = require("telescope.sorters").get_fuzzy_file,
+    file_sorter = tss.get_fuzzy_file,
     file_ignore_patterns = { "node_modules" },
-    generic_sorter = require("telescope.sorters").get_generic_fuzzy_sorter,
+    generic_sorter = tss.get_generic_fuzzy_sorter,
     path_display = { "truncate" },
     winblend = 0,
     border = {},
     borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
     color_devicons = true,
     set_env = { ["COLORTERM"] = "truecolor" }, -- default = nil,
-    file_previewer = require("telescope.previewers").vim_buffer_cat.new,
-    grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
-    qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
+    file_previewer = tsp.vim_buffer_cat.new,
+    grep_previewer = tsp.vim_buffer_vimgrep.new,
+    qflist_previewer = tsp.vim_buffer_qflist.new,
     -- Developer configurations: Not meant for general override
-    buffer_previewer_maker = require("telescope.previewers").buffer_previewer_maker,
+    buffer_previewer_maker = tsp.buffer_previewer_maker,
     mappings = {
-      n = { ["q"] = require("telescope.actions").close },
+      n = { ["q"] = tsa.close },
     },
   },
 
