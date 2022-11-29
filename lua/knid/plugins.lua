@@ -23,13 +23,15 @@ packer.startup(function(use)
    -- UI
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
+    use 'ayu-theme/ayu-vim'
     use "EdenEast/nightfox.nvim" -- Theme
     -- Git stuff
-    use 'lewis6991/gitsigns.nvim' 
+    use 'lewis6991/gitsigns.nvim'
     use 'glepnir/dashboard-nvim'
 
     -- LSP, LSPServers, Autocmp
     use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+    use 'jose-elias-alvarez/null-ls.nvim'
     use { "williamboman/mason.nvim" } -- Install LSPServers
     use 'williamboman/mason-lspconfig.nvim'
     use 'hrsh7th/cmp-nvim-lsp'
@@ -53,4 +55,5 @@ packer.startup(function(use)
         run = 'yarn install --frozen-lockfile --production'
     }
     use 'numToStr/Comment.nvim'
+    use 'simrat39/rust-tools.nvim'
 end)
