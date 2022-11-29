@@ -1,9 +1,13 @@
 
-![nvim screenshot12](./images/sc1.png)
+![nvim screenshot1](./images/sc1.png)
 
-![nvim screenshot](./images/sc2.png)
+![nvim screenshot2](./images/sc2.png)
 
 ![nvim screenshot3](./images/sc3.png)
+
+## Non-Transparent
+
+![nvim screenshot3](./images/sc4.png)
 
 # My nvim conf files
 
