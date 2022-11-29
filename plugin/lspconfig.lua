@@ -1,5 +1,11 @@
 local status, lspconfig = pcall(require, 'lspconfig')
 if (not status) then return end
+local status, cmplsp = pcall(require, 'cmp_nvim_lsp')
+if (not status) then return end
+local status, mason = pcall(require, 'mason')
+if (not status) then return end
+local status, masonlsp = pcall(require, "mason-lspconfig")
+if (not status) then return end
 
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -39,20 +45,37 @@ local lsp_flags = {
   -- This is the default in Nvim 0.7+
   debounce_text_changes = 150,
 }
-local status, cmplsp = pcall(require, 'cmp_nvim_lsp')
-if (not status) then return end
 
 local capabilities = cmplsp.default_capabilities()
 
-lspconfig['pyright'].setup{
+mason.setup()
+masonlsp.setup({
+    ensure_installed = {
+        "sumneko_lua", 
+        "pyright", 
+        "tsserver", 
+        "clangd", 
+        "rust_analyzer"
+    }
+})
+
+masonlsp.setup_handlers(
+    {
+        function(server)
+            lspconfig[server].setup{
+                on_attach = on_attach,
+                flags = lsp_flags,
+                capabilities = capabilities,
+            }
+        end,
+    }
+)
+
+local status, rt = pcall(require, 'rust-tools')
+if (not status) then return end
+
+rt.setup{
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities,
 }
-
-lspconfig['tsserver'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-    capabilities = capabilities,
-}
-
