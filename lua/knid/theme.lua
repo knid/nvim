@@ -1,4 +1,4 @@
-local transparent = false
+local transparent = true 
 local theme = "ayu"
 
 if (transparent) then
