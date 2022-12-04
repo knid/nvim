@@ -35,19 +35,14 @@ local function fileExists(name)
    if f~=nil then io.close(f) return true else return false end
 end
 
-local currentFilePath = getCurrentFilePath()
-local currentFileName = getCurrentFileName()
-local currentFileNameWithoutExtension = getCurrentFileNameWithoutExtension()
-local currentFileExtension = getCurrentFileExtension()
-
 local function runPython(defaultVersion)
     if version then
-        vim.cmd("! python" .. defaultVersion .. " " .. currentFilePath)
+        vim.cmd("! python" .. defaultVersion .. " " .. getCurrentFilePath())
     else
         if has "python" then
-            vim.cmd("! python " .. currentFilePath)
+            vim.cmd("! python " .. getCurrentFilePath())
         elseif has "python3" then
-            vim.cmd("! python3 " .. currentFilePath)
+            vim.cmd("! python3 " .. getCurrentFilePath())
         end
     end
 end
@@ -57,17 +52,21 @@ local function runRust()
     if checkCargoToml then
         vim.cmd('!cargo run')
     else
-        vim.cmd('! rustc ' .. currentFilePath .. " && " .. "./" .. currentFileNameWithoutExtension)
+        vim.cmd('! rustc ' .. getCurrentFilePath() .. " && " .. "./" .. getCurrentFileNameWithoutExtension())
     end
 end
 
 local function runC()
-    vim.cmd("! gcc " .. currentFilePath .. " -o " .. currentFileNameWithoutExtension .. " && " .. "./" .. currentFileNameWithoutExtension)
+    vim.cmd("! gcc " .. getCurrentFilePath() .. " -o " .. getCurrentFileNameWithoutExtension() .. " && " .. "./" .. getCurrentFileNameWithoutExtension())
 end
 -- Commands --
 
 -- Run
 function Run()
+    if not getCurrentFileName() then
+        do return end
+    end
+    local currentFileExtension = getCurrentFileExtension()
     vim.cmd('write')
     if currentFileExtension == "py" then
         runPython()
