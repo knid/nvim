@@ -1,4 +1,5 @@
 require('knid.base')
 require('knid.plugins')
+require('knid.commands')
 require('knid.maps')
 require('knid.theme')
