@@ -19,16 +19,16 @@
 
 If you want to use transparent you have to make iterm2 transparent
 
-<!--
 ## Try in docker
 
 ```bash
   docker run -w /root -it --rm alpine:edge sh -uelic '
     apk add git nodejs neovim ripgrep alpine-sdk --update
-    git clone https://github.com/knid/nvim ~/.config/nvim && sh ~/.config/nvim/install.sh
+    git clone https://github.com/knid/nvim ~/.config/nvim && 
+    sh ~/.config/nvim/install.sh
     '
 ```
--->
+
 ## Setup
 
 ```bash

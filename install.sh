@@ -8,3 +8,4 @@ nvim +PackerInstall
 # Build markdown-preview
 echo "Building markdown-preview plugin with yarn"
 (cd ~/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim && yarn install && yarn build)
+nvim
