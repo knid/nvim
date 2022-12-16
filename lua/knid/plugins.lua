@@ -58,4 +58,5 @@ packer.startup(function(use)
     use 'numToStr/Comment.nvim'
     use 'simrat39/rust-tools.nvim'
     use 'folke/trouble.nvim'
+    use {'iamcco/markdown-preview.nvim'}
  end)
