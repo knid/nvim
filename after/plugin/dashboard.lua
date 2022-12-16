@@ -20,7 +20,7 @@ db.default_banner = {
 db.custom_header = nil
 db.custom_footer = nil
 db.custom_center = {
-  { icon = '', desc = 'Author: Sinan Kanidağlı', action = '' },
+  { icon = '', desc = 'Author: Sinan Kanidağlı | <github.com/knid>', action = '' },
 }
 db.preview_file_Path = nil
 db.preview_file_height = 0

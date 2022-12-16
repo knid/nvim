@@ -2,11 +2,8 @@ local keymap = vim.keymap
 local status, telescope = pcall(require, 'telescope.builtin')
 if (not status) then return end
 
-require("knid.commands")
-
 -- Custom Commands
-keymap.set('n', '<leader>r', Run)
-
+keymap.set('n', '<leader>r', ':Run<CR>')
 -- NvimTree
 keymap.set('n', '<leader>ff', ':NvimTreeFocus<CR>')
 keymap.set('n', '<leader>fc', ':NvimTreeClose<CR>')
@@ -21,5 +18,3 @@ keymap.set('n', '<leader>rt', ':Terminal<CR>')
 --Other stuff
 keymap.set('n', '<S-u>', ':m-2<CR>')
 keymap.set('n', '<S-d>', ':m+<CR>')
-
-

@@ -43,3 +43,5 @@ o.wildoptions = 'pum'
 o.pumblend = 5
 o.background = 'dark'
 o.clipboard:append { 'unnamedplus' }
+
+vim.api.nvim_create_autocmd({'VimEnter'}, {command = "syntax on"})

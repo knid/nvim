@@ -4,7 +4,7 @@ if (not status) then
     return
 end
 
-vim.cmd [[packadd packer.nvim]]
+-- vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
     use 'wbthomason/packer.nvim'
@@ -24,7 +24,7 @@ packer.startup(function(use)
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
     use 'ayu-theme/ayu-vim'
-    use "EdenEast/nightfox.nvim" -- Theme
+    use 'EdenEast/nightfox.nvim' -- Theme
     -- Git stuff
     use 'lewis6991/gitsigns.nvim'
     use 'glepnir/dashboard-nvim'
@@ -39,13 +39,14 @@ packer.startup(function(use)
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
+    use 'glepnir/lspsaga.nvim'
     -- Snips
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
     use "rafamadriz/friendly-snippets"
 
     -- Other stuff
-    use "windwp/nvim-autopairs"
+    use 'windwp/nvim-autopairs'
     use {
         'windwp/nvim-ts-autotag',
          after = {'nvim-treesitter/nvim-treesitter'}
@@ -56,4 +57,5 @@ packer.startup(function(use)
     }
     use 'numToStr/Comment.nvim'
     use 'simrat39/rust-tools.nvim'
-end)
+    use 'folke/trouble.nvim'
+ end)
