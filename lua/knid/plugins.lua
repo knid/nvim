@@ -58,5 +58,8 @@ packer.startup(function(use)
     use 'numToStr/Comment.nvim'
     use 'simrat39/rust-tools.nvim'
     use 'folke/trouble.nvim'
-    use {'iamcco/markdown-preview.nvim'}
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
  end)

@@ -11,7 +11,11 @@
 
 # My nvim conf files
 
-Requires [Neovim](https://neovim.io/) (>= 0.8)
+#### Requires 
+
+- [Neovim](https://neovim.io/) (>= 0.8)
+
+- [yarn](https://classic.yarnpkg.com/lang/en/docs/install/) (For markdown-preview)
 
 If you want to use transparent you have to make iterm2 transparent
 
