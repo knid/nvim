@@ -1,12 +1,12 @@
 <h1 align="center">KnidNvim</h1>
 
 <div align="center">
-  <img alt="" src="https://img.shields.io/badge/Neovim-0.8.0-green?style=for-the-badge&logo=neovim">
-  <a href="https://github.com/knid/nvim/issues"><img src="https://img.shields.io/github/issues/knid/nvim?style=for-the-badge&logo=github&label=Issues&color=d77982"></a> 
-  <img alt="GitHub" src="https://img.shields.io/github/license/knid/nvim?style=for-the-badge">
-  <img alt="" src="https://img.shields.io/badge/completely lua-blue?style=for-the-badge&logo=lua">
-  <a href="https://twitter.com/devknid" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/devknid?style=for-the-badge&logo=twitter&color=%234B78E6&logoColor=%234B78E6"><a/>
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/knid/nvim?style=for-the-badge">
+  <img alt="" src="https://img.shields.io/badge/Neovim-0.8.0-green?style=flat-square&logo=neovim">
+  <a href="https://github.com/knid/nvim/issues"><img src="https://img.shields.io/github/issues/knid/nvim?style=flat-square&logo=github&label=Issues&color=d77982"></a> 
+  <img alt="GitHub" src="https://img.shields.io/github/license/knid/nvim?style=flat-square">
+  <img alt="" src="https://img.shields.io/badge/completely lua-blue?style=flat-square&logo=lua">
+  <a href="https://twitter.com/devknid" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/devknid?style=flat-square&logo=twitter&color=%234B78E6&logoColor=%234B78E6"><a/>
+  <!-- <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/knid/nvim?syle=flat-square"> -->
 </div>
 
 ## Showcase
