@@ -2,25 +2,36 @@ local home = os.getenv('HOME')
 local status, db = pcall(require, 'dashboard')
 if (not status) then return end
 
+local LEADER = vim.g.mapleader
+if LEADER == ' ' then
+  LEADER = 'SPC'
+end
+
+
 db.default_banner = {
-'',
-'',
-'    ▄█   ▄█▄ ███▄▄▄▄    ▄█  ████████▄  ', 
-'   ███ ▄███▀ ███▀▀▀██▄ ███  ███   ▀███ ',
-'   ███▐██▀   ███   ███ ███▌ ███    ███ ',
-'  ▄█████▀    ███   ███ ███▌ ███    ███ ', 
-' ▀▀█████▄    ███   ███ ███▌ ███    ███ ', 
-'   ███▐██▄   ███   ███ ███  ███    ███ ', 
-'   ███ ▀███▄ ███   ███ ███  ███   ▄███ ', 
-'   ███   ▀█▀  ▀█   █▀  █▀   ████████▀  ', 
-'   ▀                                   ', 
-'                                       ',
-'',
+  '',
+  '',
+  '██╗  ██╗███╗  ██╗██╗██████╗ ',
+  '██║ ██╔╝████╗ ██║██║██╔══██╗',
+  '█████═╝ ██╔██╗██║██║██║  ██║',
+  '██╔═██╗ ██║╚████║██║██║  ██║',
+  '██║ ╚██╗██║ ╚███║██║██████╔╝',
+  '╚═╝  ╚═╝╚═╝  ╚══╝╚═╝╚═════╝ ',
+  '',
+  '',
 }
 db.custom_header = nil
-db.custom_footer = nil
+db.custom_footer = { '', 'Have fun with knid/nvim' }
 db.custom_center = {
-  { icon = '', desc = 'Author: Sinan Kanidağlı | <github.com/knid>', action = '' },
+  { icon = '', desc = 'Sinan Kanidağlı | <github.com/knid>', action = '' },
+  { icon = '', desc = '____', action = '' },
+  { icon = '  ', desc = 'Recently opened files              ', shortcut = LEADER .. ' fh',
+    action = 'Telescope oldfiles' },
+  { icon = '  ', desc = 'File browser                       ', shortcut = LEADER .. ' ff', action = 'NvimTreeOpen' },
+  { icon = '◎  ', desc = 'Find file                          ', shortcut = LEADER .. ' tf',
+    action = 'Telescope find_files' },
+  { icon = '  ', desc = 'Settings                           ', shortcut = LEADER .. ' es',
+    action = 'Telescope find_files' },
 }
 db.preview_file_Path = nil
 db.preview_file_height = 0

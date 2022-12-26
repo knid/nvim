@@ -7,9 +7,6 @@ if (not status) then return end
 local status, tsa = pcall(require, 'telescope.actions')
 if (not status) then return end
 
-
-
-
 telescope.setup({
   defaults = {
     vimgrep_arguments = {
@@ -22,7 +19,7 @@ telescope.setup({
       "--column",
       "--smart-case",
     },
-    prompt_prefix = "   ",
+    prompt_prefix = " >  ",
     selection_caret = "  ",
     entry_prefix = "  ",
     initial_mode = "insert",
@@ -63,3 +60,9 @@ telescope.setup({
 
   extensions_list = { "themes", "terms" },
 })
+
+pcall(function()
+  for _, ext in ipairs(options.extensions_list) do
+    telescope.load_extension(ext)
+  end
+end)

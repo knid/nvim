@@ -1,0 +1,5 @@
+require('knid.config')
+require('knid.core')
+require('knid.plugins')
+require('knid.ui')
+require('knid.commands')

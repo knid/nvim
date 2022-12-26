@@ -1,29 +1,32 @@
 local status, ts = pcall(require, "nvim-treesitter.configs")
 if (not status) then return end
 
+local config = require('knid.config')
+
 ts.setup {
- highlight = {
-   enable = true,
- },
- indent = {
-   enable = true,
-   disable = {},
- },
- ensure_installed = {
-   "javascript",
-   "tsx",
-   "toml",
-   "fish",
-   "php",
-   "json",
-   "yaml",
-   "swift",
-   "css",
-   "html",
-   "lua",
-   "rust"
- },
- autotag = {
-   enable = true,
- },
+  sync_install = false,
+  highlight = {
+    enable = true,
+  },
+  indent = {
+    enable = true,
+    disable = {},
+  },
+  ensure_installed = {
+    "javascript",
+    "json",
+    "yaml",
+    "swift",
+    "css",
+    "html",
+    "lua",
+    "rust",
+    "c",
+    "python",
+    "go"
+  },
+  autotag = {
+    enable = true,
+    filetypes = { "html", "javascript", "typescript", "javascriptreact", "typescriptreact", "tsx", "jsx" },
+  },
 }

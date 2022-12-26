@@ -1,0 +1,1 @@
+require('knid.plugins.packer')
