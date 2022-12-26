@@ -17,7 +17,7 @@ local plugin_list = {
   ------------
   -- Themes --
   ------------
-  'ayu-theme/ayu-vim',
+  'knid/ayu-vim',
   'EdenEast/nightfox.nvim',
   'frenzyexists/aquarium-vim',
   'ful1e5/onedark.nvim',
@@ -26,6 +26,8 @@ local plugin_list = {
   -- Fuzzy Finder --
   ------------------
   { 'nvim-telescope/telescope.nvim', tag = '0.1.0', requires = { { 'nvim-lua/plenary.nvim' } } },
+  { 'nvim-telescope/telescope-fzf-native.nvim',
+    run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' },
   ---------
   -- Git --
   ---------

@@ -19,8 +19,7 @@ if config.theme == 'onedark' then
   return
 end
 
-
-t = {'nightfox', 'dayfox', 'dawnfox', 'duskfox', 'terafox', 'carbonfox'}
+local t = { 'nightfox', 'dayfox', 'dawnfox', 'duskfox', 'terafox', 'carbonfox' }
 if utils.table.has_value(t, config.theme) then
   local status, _ = pcall(require, config.theme)
   if (not status) then return end
@@ -44,7 +43,7 @@ if config.theme == 'aquarium' then
   return
 end
 
-if config.theme == 'everforest' or config.theme == 'everforest-dark' or config.theme == 'everforest.soft' then
+if config.theme == 'everforest' or config.theme == 'everforest-dark' or config.theme == 'everforest-soft' then
   local bg = utils.string.split(config.theme, '-')[2]
   if bg then
     vim.g.everforest_background = bg
@@ -55,3 +54,13 @@ if config.theme == 'everforest' or config.theme == 'everforest-dark' or config.t
   vim.cmd('colorscheme everforest')
   return
 end
+
+if config.theme == 'ayu-light' or config.theme == 'ayu-dark' or config.theme == 'ayu-mirage' then
+  local bg = utils.string.split(config.theme, '-')[2]
+  vim.g.ayucolor = 'mirage'
+  vim.cmd('colorscheme ayu')
+  return
+end
+
+
+vim.cmd('highlight NonText guifg=bg')

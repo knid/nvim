@@ -4,7 +4,10 @@ if (not status) then return end
 
 -- Custom Commands
 keymap.set('n', '<leader>r', ':Run<CR>')
-keymap.set('n', '<leader>es', ':KnidConfig')
+keymap.set('n', '<leader>es', ':KnidConfig<CR>')
+-- Terminal
+keymap.set('n', '<leader>c', ':KnidTerminal<CR>')
+keymap.set('n', '<leader>es', ':KnidConfig<CR>')
 -- NvimTree
 keymap.set('n', '<leader>ff', ':NvimTreeFocus<CR>')
 keymap.set('n', '<leader>fc', ':NvimTreeClose<CR>')

@@ -1,5 +1,6 @@
 require('knid.commands.install')
 require('knid.commands.update')
+require('knid.commands.terminal')
 require('knid.commands.run')
 
 vim.api.nvim_create_user_command(
@@ -22,6 +23,14 @@ vim.api.nvim_create_user_command(
   'KnidUpdate',
   function(opts)
     Update()
+  end,
+  {}
+)
+
+vim.api.nvim_create_user_command(
+  'KnidTerminal',
+  function(opts)
+    Terminal()
   end,
   {}
 )

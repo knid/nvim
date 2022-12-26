@@ -13,7 +13,7 @@ vim.scriptencoding = 'utf-8'
 o.encoding = 'utf-8'
 o.fileencoding = 'utf-8'
 
-wo.number = true
+-- wo.number = true
 
 o.title = true
 o.autoindent = true
