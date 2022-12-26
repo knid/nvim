@@ -101,34 +101,13 @@ or
 
 #### Mappings
 
-There are default mappings.
-<a href="lua/knid/core/maps.lua">lua/knid/core/maps.lua</a>
+Default mappings.
+<a href="lua/knid/core/default_maps.lua">lua/knid/core/default_maps.lua</a>
 
-```lua
--- Custom Commands
-{'n', '<leader>r', ':Run<CR>'}
-{'n', '<leader>es', ':KnidConfig'}
--- NvimTree
-{'n', '<leader>ff', ':NvimTreeFocus<CR>'}
-{'n', '<leader>fc', ':NvimTreeClose<CR>'}
--- Telescope
-{'n', '<leader>tf', telescope.find_files}
-{'n', '<leader>fh', telescope.oldfiles}
-{'n', '<leader>b', telescope.buffers}
---Prettier
-{'n', '<leader>p', ':Prettier<CR>'}
---Terminal
-{'n', '<C-t>',  ':ToggleTerm<CR>'}
-{'n', '<C-t>2', ':ToggleTerm 2<CR>'}
-{'n', '<C-t>3', ':ToggleTerm 3<CR>'}
-{'n', '<C-t>4', ':ToggleTerm 4<CR>'}
-{'n', '<C-t>5', ':ToggleTerm 5<CR>'}
---Other stuff
-{'n', '<S-u>', ':m-2<CR>'}
-{'n', '<S-d>', ':m+<CR>'}
-```
+You can add more by editing <a href="lua/knid/core/custom_maps.lua">lua/knid/core/custom_maps.lua</a> file.
 
-You can add more via editing config file.
+OR using <a href="lua/knid/config.lua">lua/knid/config.lua</a> file
+
 <a href="lua/knid/core/maps.lua">lua/knid/core/maps.lua</a>
 
 ```lua
