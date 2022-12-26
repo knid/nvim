@@ -16,7 +16,21 @@
 <img src="https://i.imgur.com/BJbIjr5.jpeg">
 <img src="https://i.imgur.com/51XKXAe.png">
 
-### What is it?
+## Contents
+
+- [About](#about)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Update](#update)
+- [Configuration](#configuration)
+- [Install LSP Servers](#install-lsp-servers)
+- [Built-in Commands](#built-in-commands)
+- [Mappings](#mappings)
+- [Change Theme](#change-theme)
+- [Add Plugins](#add-plugins)
+- [Suppport](#support)
+
+### About
 
 - KnidNvim is my personal neovim configuration with a beautiful ui powered by many powerful plugins like
   Telescope, nvim-tree, lspconfig. Completely written in lua.
