@@ -18,7 +18,7 @@
 
 ### What is it?
 
-- KnidNvim is a neovim configuration with a beautiful ui powered by many powerful plugins like
+- KnidNvim is my personal neovim configuration with a beautiful ui powered by many powerful plugins like
   Telescope, nvim-tree, lspconfig. Completely written in lua.
 
 - KnidNvim has about 10+ beautiful themes. You can add more or customize anything.
