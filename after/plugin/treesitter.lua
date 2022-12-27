@@ -1,8 +1,6 @@
 local status, ts = pcall(require, "nvim-treesitter.configs")
 if (not status) then return end
 
-local config = require('knid.config')
-
 ts.setup {
   sync_install = false,
   highlight = {
@@ -10,7 +8,7 @@ ts.setup {
   },
   indent = {
     enable = true,
-    disable = {},
+    disable = { 'python' },
   },
   ensure_installed = {
     "javascript",

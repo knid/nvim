@@ -1,5 +1,6 @@
 local plugin_list = {
   'wbthomason/packer.nvim',
+  'lewis6991/impatient.nvim',
   ---------------
   -- Highlight --
   ---------------
@@ -42,7 +43,6 @@ local plugin_list = {
   -----------
   -- Utils --
   -----------
-  { "akinsho/toggleterm.nvim", tag = '*' },
   { "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" },
   --------------
   -- Markdown --
@@ -80,7 +80,7 @@ local plugin_list = {
   -- HTML
   'mattn/emmet-vim',
   -- Typescript
-  { 'windwp/nvim-ts-autotag', after = { 'nvim-treesitter/nvim-treesitter' } },
+  { 'windwp/nvim-ts-autotag', after = { 'nvim-treesitter' } },
   -- JavaScript
   'yuezk/vim-js',
   -- JSX

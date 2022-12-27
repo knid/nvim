@@ -31,7 +31,7 @@ db.custom_center = {
   { icon = '◎  ', desc = 'Find file                          ', shortcut = LEADER .. ' tf',
     action = 'Telescope find_files' },
   { icon = '  ', desc = 'Settings                           ', shortcut = LEADER .. ' es',
-    action = 'Telescope find_files' },
+    action = 'KnidConfig' },
 }
 db.preview_file_Path = nil
 db.preview_file_height = 0

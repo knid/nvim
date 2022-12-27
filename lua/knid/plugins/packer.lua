@@ -16,7 +16,7 @@ end
 
 local packer = require('packer')
 local plugin_list = require('knid.plugins.list')
-
+pcall(require, "impatient")
 
 vim.cmd [[packadd packer.nvim]]
 
