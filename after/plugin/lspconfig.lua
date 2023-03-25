@@ -41,7 +41,6 @@ local capabilities = cmplsp.default_capabilities()
 mason.setup()
 masonlsp.setup({
   ensure_installed = {
-    'sumneko_lua',
     'tsserver',
     'pyright',
     -- 'clangd'
