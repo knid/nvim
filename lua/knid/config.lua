@@ -1,7 +1,7 @@
 Config = {
   leader = " ",
   theme = 'onedark', -- Available Themes: onedark, aquarium, ayu-light, ayu-mirage, ayu-dark everforest, nightfox, dayfox, dawnfox, duskfox, terafox, carbonfox
-  transparent = false,
+  transparent = true,
   background = 'dark',
   mkdp_theme = 'dark',
   mkdp_browser = 'min',

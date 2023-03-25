@@ -44,6 +44,7 @@
 ### Requirements
 
 - [Neovim](https://neovim.io/) (>= 0.8)
+- [Node](https://nodejs.org/)
 - [Use a nerd font](https://www.nerdfonts.com) in your terminal
 - Make sure to delete this folder `~/.local/share/nvim`
 - (Optional) [ripgrep](https://github.com/BurntSushi/ripgrep) is required for grep searching with Telescope.

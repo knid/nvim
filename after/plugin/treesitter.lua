@@ -21,7 +21,9 @@ ts.setup {
     "rust",
     "c",
     "python",
-    "go"
+    "go",
+    "markdown",
+    "markdown_inline"
   },
   autotag = {
     enable = true,
