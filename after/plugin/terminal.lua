@@ -1,3 +1,8 @@
+local status, t = pcall(require, 'toggleterm')
+if (not status) then return end
+
+t.setup()
+
 function _G.set_terminal_keymaps()
   local opts = { buffer = 0 }
   vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)

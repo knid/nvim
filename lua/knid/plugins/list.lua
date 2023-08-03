@@ -8,13 +8,15 @@ local plugin_list = {
   -------------------
   -- File Explorer --
   -------------------
-  { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons', }, },
+  -- { 'preservim/nerdtree', { 'nvim-tree/nvim-web-devicons', }, },
+  -- { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons', }, },
   --------
   -- UI --
   --------
+  { 'kyazdani42/nvim-web-devicons' },
   { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } },
-  'glepnir/dashboard-nvim',
-  "lukas-reineke/indent-blankline.nvim",
+  -- 'glepnir/dashboard-nvim',
+  -- "lukas-reineke/indent-blankline.nvim",
   ------------
   -- Themes --
   ------------
@@ -27,23 +29,22 @@ local plugin_list = {
   -- Fuzzy Finder --
   ------------------
   { 'nvim-telescope/telescope.nvim', tag = '0.1.0', requires = { { 'nvim-lua/plenary.nvim' } } },
-  { 'nvim-telescope/telescope-fzf-native.nvim',
-    run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' },
+  {"nvim-telescope/telescope-file-browser.nvim", requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }},
   ---------
   -- Git --
   ---------
-  'tpope/vim-fugitive',
-  'lewis6991/gitsigns.nvim',
+  -- 'tpope/vim-fugitive',
+  -- 'lewis6991/gitsigns.nvim',
   ------------------
   -- Code Helpers --
   ------------------
   'windwp/nvim-autopairs',
   'numToStr/Comment.nvim',
-  'MunifTanjim/prettier.nvim',
   -----------
   -- Utils --
   -----------
-  { "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" },
+  { 'folke/trouble.nvim', requires = 'kyazdani42/nvim-web-devicons' },
+  -- { 'akinsho/toggleterm.nvim' },
   --------------
   -- Markdown --
   --------------
@@ -54,29 +55,29 @@ local plugin_list = {
   'neovim/nvim-lspconfig',
   'onsails/lspkind.nvim',
   'folke/lsp-colors.nvim',
-  { "glepnir/lspsaga.nvim", branch = "main" },
+  -- { "glepnir/lspsaga.nvim", branch = "main" },
   "williamboman/mason.nvim",
   'williamboman/mason-lspconfig.nvim',
   'jose-elias-alvarez/null-ls.nvim',
   ---------
-  -- CMP --
-  ---------
+  -- -- CMP --
+  -- ---------
   'hrsh7th/cmp-nvim-lsp',
   'hrsh7th/cmp-buffer',
   'hrsh7th/cmp-path',
   'hrsh7th/cmp-cmdline',
   'hrsh7th/nvim-cmp',
   -----------
-  -- Snips --
-  -----------
+  -- -- Snips --
+  -- -----------
   'L3MON4D3/LuaSnip',
   'saadparwaiz1/cmp_luasnip',
   "rafamadriz/friendly-snippets",
-  -------------------------------------------
+  -- -------------------------------------------
   -- Language & Framework Specific Plugins --
   -------------------------------------------
   -- Rust
-  'simrat39/rust-tools.nvim',
+  -- 'simrat39/rust-tools.nvim',
   -- HTML
   'mattn/emmet-vim',
   -- Typescript

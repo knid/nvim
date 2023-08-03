@@ -49,7 +49,7 @@ if config.theme == 'everforest' or config.theme == 'everforest-dark' or config.t
     vim.g.everforest_background = bg
   end
   if config.transparent then
-    vim.g.everforest_transparent_background = 2
+    vim.g.everforest_transparent_background = 1
   end
   vim.cmd('colorscheme everforest')
   return
@@ -63,4 +63,23 @@ if config.theme == 'ayu-light' or config.theme == 'ayu-dark' or config.theme == 
 end
 
 
-vim.cmd('highlight NonText guifg=bg')
+if config.theme == 'gruvbox' then
+  if config.transparent then
+    vim.g.gruvbox_transparent_bg = 1
+  end
+  vim.cmd('colorscheme gruvbox')
+  return
+end
+
+if config.theme == 'one_monokai' then
+  if config.transparent then
+    vim.g.gruvbox_transparent_bg = 1
+  end
+  vim.cmd('colorscheme one_monokai')
+  return
+end
+
+vim.cmd('colorscheme ' .. config.theme )
+if config.transparent then
+    vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+end

@@ -20,6 +20,7 @@ ts.setup {
     "lua",
     "rust",
     "c",
+    "cpp",
     "python",
     "go",
     "markdown",

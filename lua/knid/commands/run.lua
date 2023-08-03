@@ -40,6 +40,11 @@ local function runJs()
   cmd("! node " .. GetCurrentFilePath())
 end
 
+local function runGo()
+  cmd("! go run " .. GetCurrentFilePath())
+end
+
+
 -- Commands --
 
 -- Run
@@ -59,5 +64,7 @@ function Run()
     runCpp()
   elseif currentFileExtension == "js" then
     runJs()
+  elseif currentFileExtension == "go" then
+    runGo()
   end
 end

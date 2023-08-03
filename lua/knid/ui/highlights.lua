@@ -10,5 +10,4 @@ o.pumblend = 5
 o.background = config.background
 
 
-vim.api.nvim_create_autocmd({ 'BufEnter' }, { command = "set syntax=on" })
-vim.api.nvim_create_autocmd({ 'BufEnter' }, { command = "hi NonText guifg=bg" })
+-- vim.api.nvim_create_autocmd({ 'BufEnter' }, { command = "set syntax=on" })
