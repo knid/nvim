@@ -9,6 +9,10 @@
   <!-- <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/knid/nvim?syle=flat-square"> -->
 </div>
 
+TODO: Edit readme
+#### !This is my current config. There are some differents with main branch. This readme file may dont correct for this branch!
+
+
 ## Showcase
 
 <img src="https://i.imgur.com/iY7q2Oh.png">
