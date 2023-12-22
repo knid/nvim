@@ -14,7 +14,8 @@ local plugin_list = {
   -- UI --
   --------
   { 'kyazdani42/nvim-web-devicons' },
-  { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } },
+  -- { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } },
+  { "junegunn/goyo.vim" },
   -- 'glepnir/dashboard-nvim',
   -- "lukas-reineke/indent-blankline.nvim",
   ------------
@@ -28,7 +29,7 @@ local plugin_list = {
   ------------------
   -- Fuzzy Finder --
   ------------------
-  { 'nvim-telescope/telescope.nvim', tag = '0.1.0', requires = { { 'nvim-lua/plenary.nvim' } } },
+  { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/plenary.nvim' } } },
   {"nvim-telescope/telescope-file-browser.nvim", requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }},
   ---------
   -- Git --
