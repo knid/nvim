@@ -1,8 +1,8 @@
 Config = {
   leader = " ",
   -- theme = "ayu-mirage",
-  theme = 'habamax', -- Available Themes: onedark, aquarium, ayu-light, ayu-mirage, ayu-dark, everforest, nightfox, dayfox, dawnfox, duskfox, terafox, carbonfox
-  transparent = true,
+  theme = 'carbonfox', -- Available Themes: onedark, aquarium, ayu-light, ayu-mirage, ayu-dark, everforest, nightfox, dayfox, dawnfox, duskfox, terafox, carbonfox
+  transparent = false,
   background = 'dark',
   mkdp_theme = 'dark',
   mkdp_browser = 'min',

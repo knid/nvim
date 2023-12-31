@@ -21,7 +21,8 @@ end
 
 local t = { 'nightfox', 'dayfox', 'dawnfox', 'duskfox', 'terafox', 'carbonfox' }
 if utils.table.has_value(t, config.theme) then
-  local status, _ = pcall(require, config.theme)
+  local status, _ = pcall(require, 'nightfox')
+  print(status)
   if (not status) then return end
   if config.transparent then
     options = {
@@ -30,7 +31,7 @@ if utils.table.has_value(t, config.theme) then
       }
     }
   end
-  theme.setup(options)
+  -- theme.setup(options)
   vim.cmd('colorscheme ' .. config.theme)
   return
 end

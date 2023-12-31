@@ -17,9 +17,9 @@ wo.number = true
 o.encoding = 'utf-8'
 o.fileencoding = 'utf-8'
 
-o.number = false
-o.relativenumber = false
-o.foldcolumn = "2"
+o.number = true
+o.relativenumber = true
+o.foldcolumn = "0"
 o.title = true
 o.autoindent = true
 o.smartindent = true

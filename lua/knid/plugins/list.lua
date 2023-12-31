@@ -87,6 +87,8 @@ local plugin_list = {
   'yuezk/vim-js',
   -- JSX
   'maxmellon/vim-jsx-pretty',
+  -- LaTeX 
+  'lervag/vimtex',
 }
 
 return plugin_list
