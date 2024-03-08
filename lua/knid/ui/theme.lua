@@ -16,13 +16,11 @@ if config.theme == 'onedark' then
     }
   end
   theme.setup(options)
-  return
 end
 
 local t = { 'nightfox', 'dayfox', 'dawnfox', 'duskfox', 'terafox', 'carbonfox' }
 if utils.table.has_value(t, config.theme) then
   local status, _ = pcall(require, 'nightfox')
-  print(status)
   if (not status) then return end
   if config.transparent then
     options = {
@@ -33,7 +31,6 @@ if utils.table.has_value(t, config.theme) then
   end
   -- theme.setup(options)
   vim.cmd('colorscheme ' .. config.theme)
-  return
 end
 
 if config.theme == 'aquarium' then
@@ -41,7 +38,6 @@ if config.theme == 'aquarium' then
     vim.g.aqua_transparency = 1
   end
   vim.cmd('colorscheme aquarium')
-  return
 end
 
 if config.theme == 'everforest' or config.theme == 'everforest-dark' or config.theme == 'everforest-soft' then
@@ -53,14 +49,12 @@ if config.theme == 'everforest' or config.theme == 'everforest-dark' or config.t
     vim.g.everforest_transparent_background = 1
   end
   vim.cmd('colorscheme everforest')
-  return
 end
 
 if config.theme == 'ayu-light' or config.theme == 'ayu-dark' or config.theme == 'ayu-mirage' then
   local bg = utils.string.split(config.theme, '-')[2]
   vim.g.ayucolor = 'mirage'
   vim.cmd('colorscheme ayu')
-  return
 end
 
 
@@ -69,7 +63,6 @@ if config.theme == 'gruvbox' then
     vim.g.gruvbox_transparent_bg = 1
   end
   vim.cmd('colorscheme gruvbox')
-  return
 end
 
 if config.theme == 'one_monokai' then
@@ -77,10 +70,14 @@ if config.theme == 'one_monokai' then
     vim.g.gruvbox_transparent_bg = 1
   end
   vim.cmd('colorscheme one_monokai')
-  return
 end
 
 vim.cmd('colorscheme ' .. config.theme )
 if config.transparent then
     vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
 end
+if config.customBG ~= '' then
+    vim.cmd('hi Normal guibg=' .. config.customBG .. 'ctermbg=' .. config.customBG)
+end
+
+

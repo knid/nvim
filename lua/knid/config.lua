@@ -2,6 +2,7 @@ Config = {
   leader = " ",
   -- theme = "ayu-mirage",
   theme = 'carbonfox', -- Available Themes: onedark, aquarium, ayu-light, ayu-mirage, ayu-dark, everforest, nightfox, dayfox, dawnfox, duskfox, terafox, carbonfox
+  customBG = 'black',
   transparent = false,
   background = 'dark',
   mkdp_theme = 'dark',

@@ -84,11 +84,13 @@ local plugin_list = {
   -- Typescript
   { 'windwp/nvim-ts-autotag', after = { 'nvim-treesitter' } },
   -- JavaScript
-  'yuezk/vim-js',
+  -- 'yuezk/vim-js',
   -- JSX
   'maxmellon/vim-jsx-pretty',
   -- LaTeX 
   'lervag/vimtex',
+  -- Session Management
+  'tpope/vim-obsession',
 }
 
 return plugin_list
