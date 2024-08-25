@@ -9,7 +9,7 @@ local plugin_list = {
     -- File Explorer --
     -------------------
     -- { 'preservim/nerdtree', { 'nvim-tree/nvim-web-devicons', }, },
-    -- { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons', }, },
+    { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons', }, },
     --------
     -- UI --
     --------
