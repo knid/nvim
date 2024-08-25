@@ -7,9 +7,6 @@ ntree.setup({
   hijack_cursor = false,
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
-  ignore_buffer_on_setup = false,
-  open_on_setup = false,
-  open_on_setup_file = false,
   sort_by = "name",
   root_dirs = {},
   prefer_startup_root = false,
@@ -17,25 +14,17 @@ ntree.setup({
   reload_on_bufenter = false,
   respect_buf_cwd = false,
   on_attach = "disable",
-  remove_keymaps = false,
   select_prompts = false,
   view = {
     adaptive_size = false,
     centralize_selection = false,
     width = 33,
-    hide_root_folder = false,
     side = "left",
     preserve_window_proportions = false,
     number = false,
     relativenumber = false,
     signcolumn = "yes",
-    mappings = {
-      custom_only = false,
-      list = {
-        -- user mappings go here
-      },
-    },
-    float = {
+     float = {
       enable = false,
       quit_on_focus_loss = true,
       open_win_config = {
@@ -83,7 +72,6 @@ ntree.setup({
         symlink = "",
         bookmark = "",
         folder = {
-          arrow_closed = "ᐳ ",
           arrow_open = "",
           default = "",
           open = "",
@@ -116,7 +104,7 @@ ntree.setup({
     update_root = false,
     ignore_list = {},
   },
-  ignore_ft_on_setup = {},
+  -- ignore_ft_on_setup = {},
   system_open = {
     cmd = "",
     args = {},
