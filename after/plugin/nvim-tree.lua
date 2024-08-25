@@ -72,7 +72,6 @@ ntree.setup({
         symlink = "",
         bookmark = "",
         folder = {
-          -- arrow_closed = "ᐳ ",
           arrow_open = "",
           default = "",
           open = "",
