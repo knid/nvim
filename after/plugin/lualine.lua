@@ -4,7 +4,7 @@ if (not status) then return end
 local config = require('knid.config')
 
 ll.setup {
-  -- options = {
-  --   theme = config.lualine.theme,
-  -- }
+    options = {
+        theme = config.lualine.theme,
+    }
 }
