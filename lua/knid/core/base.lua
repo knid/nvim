@@ -12,8 +12,6 @@ g.mapleader = config.leader
 
 vim.scriptencoding = 'utf-8'
 
-wo.number = true
-
 o.encoding = 'utf-8'
 o.fileencoding = 'utf-8'
 
@@ -30,7 +28,7 @@ o.cmdheight = 1
 o.laststatus = 2
 o.expandtab = true
 o.scrolloff = 10
-o.shell = '/bin/bash'
+o.shell = '/bin/zsh'
 o.backupskip = { '/tmp/*', '/private/tmp/*' }
 o.inccommand = 'split'
 o.ignorecase = true -- Case insensitive searching UNLESS /C or capital in search

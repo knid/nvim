@@ -1,6 +1,6 @@
 Config = {
     leader = " ",
-    theme = 'habamax', -- Available Themes: onedark, aquarium, ayu-light, ayu-mirage, ayu-dark, everforest, nightfox, dayfox, dawnfox, duskfox, terafox, carbonfox
+    theme = 'carbonfox', -- Available Themes: onedark, aquarium, ayu-light, ayu-mirage, ayu-dark, everforest, nightfox, dayfox, dawnfox, duskfox, terafox, carbonfox
     customBG = '',
     transparent = false,
     background = 'dark',
